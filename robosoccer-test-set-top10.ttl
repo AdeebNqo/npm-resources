@@ -1,0 +1,537 @@
+@prefix npm: <http://www.people.cs.uct.ac.za/~zmahlaza/ontologies/patternmodel#> .
+
+<http://www.people.cs.uct.ac.za/~zmahlaza/ontologies/patternmodel#pattern1>
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/ontologies/patternmodel#PatternItem> ;
+  npm:consistsOfLexicalItem npm:p1word1, npm:p1word2, npm:p1word3, npm:p1word4, npm:p1word5 .
+
+npm:p1word1
+  a npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ipasi"
+  ] ;
+  npm:precedesInPattern npm:p1word2 .
+
+npm:p1word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "embi"
+  ] ;
+  npm:precedesInPattern npm:p1word3 .
+
+npm:p1word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ka"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player_1_team_1"
+      ]
+    ]
+  ] ;
+  npm:precedesInPattern npm:p1word4 .
+
+npm:p1word4
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "yafunyanwa"
+  ] ;
+  npm:precedesInPattern npm:p1word5 .
+
+npm:p1word5
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ngu"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player_1_team_2"
+      ]
+    ]
+  ] .
+
+npm:pattern2
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p2word1, npm:p2word2, npm:p2word3, npm:p2word4 .
+
+npm:p2word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p2word2 .
+
+npm:p2word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "udlulisela"
+  ] ;
+  npm:precedesInPattern npm:p2word3 .
+
+npm:p2word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player_2"
+      ]
+    ]
+  ] ;
+  npm:precedesInPattern npm:p2word4 .
+
+npm:p2word4
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ngokukhawuleza"
+  ] .
+
+npm:pattern3
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p3word1, npm:p3word2, npm:p3word3 .
+
+npm:p3word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p3word2 .
+
+npm:p3word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ukhabela"
+  ] ;
+  npm:precedesInPattern npm:p3word3 .
+
+npm:p3word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player2"
+      ]
+    ]
+  ] .
+
+npm:pattern4
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p4word1, npm:p4word2, npm:p4word3 .
+
+npm:p4word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p4word2 .
+
+npm:p4word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "udlulela"
+  ] ;
+  npm:precedesInPattern npm:p4word3 .
+
+npm:p4word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player2"
+      ]
+    ]
+  ] .
+
+npm:pattern5
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p5word1, npm:p5word2, npm:p5word3, npm:p5word4, npm:p5word5 .
+
+npm:p5word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p5word2 .
+
+npm:p5word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "udlulisela"
+  ] ;
+  npm:precedesInPattern npm:p5word3 .
+
+npm:p5word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "phambili"
+  ] ;
+  npm:precedesInPattern npm:p5word4 .
+
+npm:p5word4
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player2"
+      ]
+    ]
+  ] ;
+  npm:precedesInPattern npm:p5word5 .
+
+npm:p5word5
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ngokukhawuleza"
+  ] .
+
+npm:pattern6
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p6word1, npm:p6word2, npm:p6word3 .
+
+npm:p6word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p6word2 .
+
+npm:p6word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ubuyisela"
+  ] ;
+  npm:precedesInPattern npm:p6word3 .
+
+npm:p6word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player2"
+      ]
+    ]
+  ] .
+
+npm:pattern7
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p7word1, npm:p7word2, npm:p7word3 .
+
+npm:p7word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p7word2 .
+
+npm:p7word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ukhabela"
+  ] ;
+  npm:precedesInPattern npm:p7word3 .
+
+npm:p7word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player2"
+      ]
+    ]
+  ] .
+
+npm:pattern8
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p8word1, npm:p8word2, npm:p8word3, npm:p8word4 .
+
+npm:p8word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1_team_1"
+  ] ;
+  npm:precedesInPattern npm:p8word2 .
+
+npm:p8word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "uhlutha"
+  ] ;
+  npm:precedesInPattern npm:p8word3 .
+
+npm:p8word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ibhola"
+  ] ;
+  npm:precedesInPattern npm:p8word4 .
+
+npm:p8word4
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player_1_team_2"
+      ]
+    ]
+  ] .
+
+npm:pattern9
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p9word1, npm:p9word2, npm:p9word3, npm:p9word4, npm:p9word5, npm:p9word6, npm:p9word7, npm:p9word8, npm:p9word9 .
+
+npm:p9word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1"
+  ] ;
+  npm:precedesInPattern npm:p9word2 .
+
+npm:p9word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "uphinda"
+  ] ;
+  npm:precedesInPattern npm:p9word3 .
+
+npm:p9word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "udlulisela"
+  ] ;
+  npm:precedesInPattern npm:p9word4 .
+
+npm:p9word4
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player2"
+      ]
+    ]
+  ] ;
+  npm:precedesInPattern npm:p9word5 .
+
+npm:p9word5
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "emva"
+  ] ;
+  npm:precedesInPattern npm:p9word6 .
+
+npm:p9word6
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "kokuvalelwa"
+  ] ;
+  npm:precedesInPattern npm:p9word7 .
+
+npm:p9word7
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ngabadlali"
+  ] ;
+  npm:precedesInPattern npm:p9word8 .
+
+npm:p9word8
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ababini"
+  ] ;
+  npm:precedesInPattern npm:p9word9 .
+
+npm:p9word9
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "be-pink"
+  ] .
+
+npm:pattern10
+  a npm:PatternItem ;
+  npm:consistsOfLexicalItem npm:p10word1, npm:p10word2, npm:p10word3, npm:p10word4, npm:p10word5, npm:p10word6, npm:p10word7, npm:p10word8, npm:p10word9, npm:p10word10 .
+
+npm:p10word1
+  a npm:SlotIsWord ;
+  npm:hasPatternSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "player_1_team_1"
+  ] ;
+  npm:precedesInPattern npm:p10word2 .
+
+npm:p10word2
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "uzama"
+  ] ;
+  npm:precedesInPattern npm:p10word3 .
+
+npm:p10word3
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ukunqumla"
+  ] ;
+  npm:precedesInPattern npm:p10word4 .
+
+npm:p10word4
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "kumgomo"
+  ] ;
+  npm:precedesInPattern npm:p10word5 .
+
+npm:p10word5
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "esiya"
+  ] ;
+  npm:precedesInPattern npm:p10word6 .
+
+npm:p10word6
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ezipalini"
+  ] .
+
+npm:p10word7
+  a npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "kodwa"
+  ] ;
+  npm:precedesInPattern npm:p10word8 .
+
+npm:p10word8
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "unikezele"
+  ] ;
+  npm:precedesInPattern npm:p10word9 .
+
+npm:p10word9
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:FixedWord ;
+  npm:hasFinalSurfaceForm [
+    a npm:Form ;
+    npm:writtenRep "ngebhola"
+  ] ;
+  npm:precedesInPattern npm:p10word10 .
+
+npm:p10word10
+  a <http://www.people.cs.uct.ac.za/~zmahlaza/patterns/robosoccer#LexicographyItem>, npm:SlotInWord ;
+  npm:consistsOfMorphologicalItem [
+    a npm:FixedAffix ;
+    npm:hasPatternSurfaceForm [
+      a npm:Form ;
+      npm:writtenRep "ku"
+    ] ;
+    npm:attachedTo [
+      a npm:TSlot ;
+      npm:hasPatternSurfaceForm [
+        a npm:Form ;
+        npm:writtenRep "player_1_team_2"
+      ]
+    ]
+  ] .
+
+[]
+  a npm:PatternCollection ;
+  npm:language "isiXhosa"@xh ;
+  npm:consistsOfPatternItem npm:pattern1, npm:pattern2, npm:pattern3, npm:pattern4, npm:pattern5, npm:pattern6, npm:pattern7, npm:pattern8, npm:pattern9, npm:pattern10 .
